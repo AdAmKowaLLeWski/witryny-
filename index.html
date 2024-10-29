@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function WinOpen_1()
+         {
+            
+                window.open("podstrona.html");
+            
+        }
+        
+        function show_confirm() 
+            { 
+                confirm("ukladanie kostki polega na zapamietaniu algorytmow (serii ruchow) wykonywanych w odpowiedniej kolejnosci"); 
+                //confirn tworzy powiadomienie typu confirm 
+            } 
+
+        
+            function show_prompt() 
+                { 
+                    prompt("umisz ulozyc kostke 3x3?"); 
+                    //prompt tworzy powiadomienie typu prompt
+                } 
+        function show_alert()
+        {
+            //alert tworzy powiaomienie typu alert 
+            alert("21,5 sekundy na kostce 3x3");
+        }
+
+
+        </script>
+        <style>
+            input
+            {
+                background-color:rgb(85,85,85);
+                width:150px;
+                height:70px;
+            }
+            hr{
+                border:outset;
+                border-color:grey;
+            }
+            .menu
+            {
+                text-align: left;
+            }
+            body
+            {
+                
+                background-color:rgb(85, 85, 85);
+                text-align: center;
+                font-family: 'Comic Sans MS';
+            }
+
+        </style>
+    </head>
+    <body>
+        <title>- Kowalewski 3K</title>
+        <div class="menu">
+            <input type="button" value="a ty umiesz?" onclick="show_prompt()">
+            <input type="button" value="na czym polega rozwiazywanie" onclick="show_confirm()">
+            <input type="button" value="mój rekord" onclick="show_alert()">
+            <input type="button" value="rekordy świata" onclick="WinOpen_1('podstrona.html')">
+            <hr>
+        </div>
+        <script>
+            //document write wyswietla tekst na stronie 
+            document.write("Adam Kowalewski 3K".bold().fontsize(8)+"<br>");
+            document.write("Kostki rubika".bold().fontsize(8));
+            document.write("<br><br>jak sie nauczyc:")
+        </script>
+        <hr>
+        <br>
+        <a href="https://rcube.pl/jak-ulozyc-kostke-2x2x2">2x2</a>
+        <br>
+       <a href="https://rcube.pl/jak-ulozyc-kostke-rubika-3x3x3-lbl">3x3</a>
+       <br>
+       <a href="https://rcube.pl/jak-ulozyc-kostke-4x4x4">4x4</a>
+    </body>
+</html>
